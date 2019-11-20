@@ -1,0 +1,155 @@
+/* USTAWIENIA PODSTAWOWE */
+
+:root {
+  /* KOLOR CZCIONKI */
+  --color-font: black;
+
+  /* KOLOR PODSTWOWY ORAZ JEGO JASNA I CIEMNA WERSJA */
+  --color-base: rgb(255, 93, 115);
+  --color-base-light: rgb(255, 224, 228);
+  --color-base-dark: rgb(143, 18, 35);
+
+  /* NEUTRALNE ODCIENIE SZAROSCI ŻEBY NIE BYŁO ZA RÓŻOWO*/
+  --color-secondary: rgb(160, 153, 142);
+  --color-secondary-light: rgb(236, 229, 217);
+  --color-secondary-dark: rgb(85, 81, 74);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--color-font);
+  font-family: 'Overpass', 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+p,
+label,
+textarea,
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/* NAWIGACJA */
+.nawig {
+  background-color: var(--color-base-dark);
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+}
+
+/* SLIDER */
+.slider {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--color-secondary-light);
+}
+
+.slider h1 {
+  text-align: center;
+  line-height: 60vh;
+}
+
+/* TEXT */
+.text {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
+.wylosowane {
+  height: 35vh;
+  width: 100%;
+  background-color: var(--color-secondary);
+}
+
+.wylosowane h1 {
+  text-align: center;
+  line-height: 35vh;
+}
+
+/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
+.wyszukiwanie {
+  height: 20vh;
+  width: 100%;
+  background-color: var(--color-secondary-dark);
+}
+
+.wyszukiwanie h1 {
+  text-align: center;
+  line-height: 20vh;
+}
+
+/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
+.produkty {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--color-secondary-light);
+}
+
+.produkty h1 {
+  text-align: center;
+  line-height: 60vh;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-secondary-dark);
+  height: 20vh;
+  width: 100%;
+}
+
+footer h1 {
+  text-align: center;
+  line-height: 20vh;
+}
+
+
+
+/* KOLORY - USUNĄĆ */
+.kolory div {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: inline-block;
+  width: 15vw;
+}
+
+.kolory h3 {
+  text-align: center;
+}
+
+.kolory p {
+  line-height: 10vh;
+  text-align: center;
+}
+
+.a {
+  background-color: var(--color-secondary);
+}
+
+.b {
+  background-color: var(--color-secondary-light);
+}
+
+.c {
+  background-color: var(--color-secondary-dark);
+}
+
+.d {
+  background-color: var(--color-base);
+}
+
+.e {
+  background-color: var(--color-base-light);
+}
+
+.f {
+  background-color: var(--color-base-dark);
+}
