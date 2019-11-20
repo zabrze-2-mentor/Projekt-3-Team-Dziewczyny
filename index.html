@@ -1,10 +1,122 @@
-<html>
-    <head>
-        <title>Team Dziewczyny</title>
-    </head>
+<!DOCTYPE html>
+<html lang="PL">
 
-    <body>
-        <h1>It works 2!</h1>
-        <p>Test</p>
-    </body>
+<head>
+    <!--=========// INFO - MAIN //=============-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Makeup App</title>
+    <meta name="description" content="Makeup">
+    <meta name="keywords" content="makeup, skin, face">
+    <meta name="author" content="Zabrze2 - Grupa dziewczyn">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--=========// BOOTSTRAP 4 //=============-->
+    <!--=========// CSS //=============-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+
+    <!--=========// GOOGLE FONT //=============-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass&display=swap" rel="stylesheet">
+
+    <!--=========// FONTAWSOME //=============-->
+    <script src="https://kit.fontawesome.com/0831f1628e.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#my-navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark nawigation sticky-top nawig">
+        <div class="container">
+
+            <!--=========// NAVBAR TOGGLER //=============-->
+
+            <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#my-navbar"
+                aria-controls="my-navbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--=========// NAVBAR NAV BUTTONS //=============-->
+
+            <div id="my-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#oNas">O NAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#wyszykiwarka">PRODUKTY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">KONTAKT</a></li>
+                </ul>
+            </div>
+            <a class="logo" href="#main"><i class="fab fa-envira"></i></a>
+        </div>
+    </nav>
+
+    <section id="main" class="slider container-fluid">
+        <h1>SLIDER</h1>
+    </section>
+
+    <section id="oNas" class="text container">
+        <h3>Produkt do makijażu? U nas znajdziesz to czego szukasz!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nis ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nis ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nis ut aliquip ex ea commodo consequat.</p>
+
+    </section>
+
+    <section class="kolory container-fluid">
+        <h3>POKAZANIE KOLORYSTYKI - do usunięcia</h3>
+        <div class="d">
+            <p>base</p>
+        </div>
+        <div class="e">
+            <p>base light</p>
+        </div>
+        <div class="f">
+            <p>base dark</p>
+        </div>
+        <div class="a">
+            <p>secondary</p>
+        </div>
+        <div class="b">
+            <p>secondary light</p>
+        </div>
+        <div class="c">
+            <p>secondary dark</p>
+        </div>
+    </section>
+
+    <section class="wylosowane container-fluid">
+        <h1>PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY</h1>
+    </section>
+
+    <section id="wyszykiwarka" class="wyszukiwanie container-fluid">
+        <h1>WYSZUKIWANIE - LISTY FILTRUJĄCE</h1>
+    </section>
+
+    <section class="produkty container-fluid">
+        <h1>WYŚWIETLAJĄCE SIE PRZEFILTROWANE PRODUKTY</h1>
+    </section>
+
+    <footer id="footer">
+        <h1>FOOTER - KONTAKT</h1>
+    </footer>
+
+
+    <!--=========// BOOTSTRAP 4 //=============-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
