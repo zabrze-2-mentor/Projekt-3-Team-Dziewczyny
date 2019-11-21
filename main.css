@@ -57,7 +57,7 @@ li {
   background-color: var(--color-base-dark);
 }
 
-/* NAWIGACJA */
+/* NAWIGACJA ----------------------------------------------------*/
 .nawig {
   background-color: var(--color-base-dark);
 }
@@ -67,7 +67,31 @@ li {
   font-size: 30px;
 }
 
-/* SLIDER */
+/* KATEGORIE I FILTRY -------------------------------------------*/
+.kategorie {
+  height: 20vh;
+  width: 100%;
+  background-color: var(--color-secondary-dark);
+}
+
+.kategorie h1 {
+  text-align: center;
+  line-height: 20vh;
+}
+
+/* PRODUKTY -----------------------------------------------------*/
+.produkty {
+  height: 60vh;
+  width: 100%;
+  background-color: white;
+}
+
+.produkty h1 {
+  text-align: center;
+  line-height: 60vh;
+}
+
+/* SLIDER -------------------------------------------------------*/
 .slider {
   height: 60vh;
   width: 100%;
@@ -79,7 +103,7 @@ li {
   line-height: 60vh;
 }
 
-/* TEXT */
+/* TEXT ---------------------------------------------------------*/
 .text {
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -95,7 +119,7 @@ li {
   min-width: 200px;
 }
 
-/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
+/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY -----------------*/
 .wylosowane {
   height: 35vh;
   width: 100%;
@@ -107,31 +131,7 @@ li {
   line-height: 35vh;
 }
 
-/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
-.wyszukiwanie {
-  height: 20vh;
-  width: 100%;
-  background-color: var(--color-secondary-dark);
-}
-
-.wyszukiwanie h1 {
-  text-align: center;
-  line-height: 20vh;
-}
-
-/* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
-.produkty {
-  height: 60vh;
-  width: 100%;
-  background-color: white;
-}
-
-.produkty h1 {
-  text-align: center;
-  line-height: 60vh;
-}
-
-/* FOOTER */
+/* FOOTER --------------------------------------------------------*/
 footer {
   background-color: var(--color-secondary-dark);
   height: 20vh;
