@@ -35,6 +35,28 @@ li {
   font-size: 18px;
 }
 
+.button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 0;
+  text-decoration: none;
+  background-color: var(--color-base);
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+    transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--color-base-dark);
+}
+
 /* NAWIGACJA */
 .nawig {
   background-color: var(--color-base-dark);
@@ -61,6 +83,16 @@ li {
 .text {
   padding-top: 5vh;
   padding-bottom: 5vh;
+}
+
+.text div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.text div button {
+  min-width: 200px;
 }
 
 /* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY */
@@ -91,7 +123,7 @@ li {
 .produkty {
   height: 60vh;
   width: 100%;
-  background-color: var(--color-secondary-light);
+  background-color: white;
 }
 
 .produkty h1 {
@@ -109,47 +141,4 @@ footer {
 footer h1 {
   text-align: center;
   line-height: 20vh;
-}
-
-
-
-/* KOLORY - USUNĄĆ */
-.kolory div {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  display: inline-block;
-  width: 15vw;
-}
-
-.kolory h3 {
-  text-align: center;
-}
-
-.kolory p {
-  line-height: 10vh;
-  text-align: center;
-}
-
-.a {
-  background-color: var(--color-secondary);
-}
-
-.b {
-  background-color: var(--color-secondary-light);
-}
-
-.c {
-  background-color: var(--color-secondary-dark);
-}
-
-.d {
-  background-color: var(--color-base);
-}
-
-.e {
-  background-color: var(--color-base-light);
-}
-
-.f {
-  background-color: var(--color-base-dark);
 }
