@@ -14,25 +14,24 @@ fetch(endpoint)
             const info = document.createElement("div");
 
             const img = document.createElement("img");
-            img.setAttribute("src", "image_link");
+            img.setAttribute("src", product.image_link);
 
-            const kategoria = document.createElement("h6");
-            kategoria.textContent = product.product_type;
+            const category = document.createElement("h6");
+            category.textContent = product.product_type;
 
-            const cena = document.createElement("h5");
-            cena.textContent = product.price + product.price_sign;
+            const price = document.createElement("h5");
+            price.textContent = product.price + product.price_sign;
 
             const button = document.createElement("button");
             button.setAttribute("class", "button");
             button.textContent = "więcej";
             
-            
             section.appendChild(card)
             card.appendChild(name);
             card.appendChild(info);
             info.appendChild(img);
-            info.appendChild(kategoria);
-            info.appendChild(cena);
+            info.appendChild(category);
+            info.appendChild(price);
             info.appendChild(button);
         });
         
