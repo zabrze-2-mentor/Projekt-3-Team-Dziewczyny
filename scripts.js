@@ -1,11 +1,24 @@
-const endpoint = 'https://makeup-api.herokuapp.com/api/v1/products.json'
+const endpoint = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
+//const endpoint = 'https://makeup-api.herokuapp.com/api/v1/products.json'
 
 const section = document.getElementById('produkt');
-
+let i = 0; 
 fetch(endpoint)
     .then((data) => data.json())
     .then(data => {
         data.forEach(product => {
+			/*
+			Dodano:
+			 - Po 20 iteracjach wychodź z pętli 
+			 Zmieniono:
+			 - Link z mniejszą ilością produktów
+			Piotrek 
+			*/
+			i++; 
+			if(i>20){
+				return;
+			}
+			
             const card = document.createElement("div")
             
             const name = document.createElement("h4");
