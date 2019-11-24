@@ -244,11 +244,18 @@ li {
 
 footer {
     background-color: var(--color-secondary-dark);
-    height: 20vh;
+    height: 100%;
     width: 100%;
 }
 
 footer h1 {
     text-align: center;
     line-height: 20vh;
+}
+footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+footer p{
+    color: black;
 }
