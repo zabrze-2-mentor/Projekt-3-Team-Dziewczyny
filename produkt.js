@@ -11,11 +11,23 @@ async function fetchProduct(id = 0) {
     document.getElementById("a-buy-now").href = response.product_link;
     response.product_colors.forEach(element => {
         let productColor = document.createElement("div");
+        let productColorContainer = document.createElement("div");
+
+        productColor.setAttribute("data-toggle", "tooltip");
+        productColor.setAttribute("data-placement", "top");
+        productColor.setAttribute("title", element.colour_name);
+
+
+        productColorContainer.classList.add("product-colors-container");
         productColor.classList.add("product-colors");
         productColor.style.backgroundColor = element.hex_value;
-        section.getElementsByClassName("colors-container")[0].appendChild(productColor);
+        productColorContainer.appendChild(productColor);
+        section.getElementsByClassName("colors-container")[0].appendChild(productColorContainer);
 
     });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
     document.getElementById('product-category').innerText = (response.category || 'brak');
     document.getElementById('product-brand').innerText = (response.brand || 'brak');
     document.getElementById('product-type').innerText = (response.product_type || 'brak');
@@ -25,6 +37,10 @@ async function fetchProduct(id = 0) {
 
 
 }
-fetchProduct("70");
+let url_string = window.location;
+var url = new URL(url_string);
+var c = url.searchParams.get("id");
+
+fetchProduct(c);
 //todo:wycentrować zdjęcie, w kolorach mają wyskakiwać nazwy kolorów po najechaniu,
 //(username || 'guest')

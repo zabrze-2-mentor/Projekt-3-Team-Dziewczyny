@@ -156,18 +156,41 @@ li {
     min-height: 30vh;
 }
 
-.product-colors {
-    background-color: gray;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 100%;
-    margin-left: 2rem;
+.product-colors-container {
+    flex-basis: 15%;
+    margin-top: 0.5rem;
+}
+.product-img{
+    text-align: center;
 }
 
+.product-colors {
+    background-color: gray;
+    margin: 0 auto;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+
+
+}
+.adv-online-buy{
+    border: 6px solid  rgb(255, 93, 115);
+    background-image: linear-gradient(to right,rgb(236, 229, 217) , rgb(160, 153, 142));
+}
+.adv-online-buy li{
+    margin: 0;
+    padding: 36px 0 36px 84px;
+    list-style: none;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+}
 .colors-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
