@@ -38,7 +38,10 @@ fetch(endpoint)
             const button = document.createElement("button");
             button.setAttribute("class", "button");
             button.textContent = "więcej";
-            
+            button.addEventListener("click",(e) => {
+                window.location.href = "produkt.html?id=" + product.id
+            })
+
             section.appendChild(card)
             card.appendChild(name);
             card.appendChild(info);
