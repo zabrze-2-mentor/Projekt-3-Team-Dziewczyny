@@ -1,18 +1,16 @@
 /* USTAWIENIA PODSTAWOWE */
 
 :root {
-  /* KOLOR CZCIONKI */
-  --color-font: black;
-
-  /* KOLOR PODSTWOWY ORAZ JEGO JASNA I CIEMNA WERSJA */
-  --color-base: rgb(255, 93, 115);
-  --color-base-light: rgb(255, 224, 228);
-  --color-base-dark: rgb(143, 18, 35);
-
-  /* NEUTRALNE ODCIENIE SZAROSCI ŻEBY NIE BYŁO ZA RÓŻOWO*/
-  --color-secondary: rgb(160, 153, 142);
-  --color-secondary-light: rgb(236, 229, 217);
-  --color-secondary-dark: rgb(85, 81, 74);
+    /* KOLOR CZCIONKI */
+    --color-font: black;
+    /* KOLOR PODSTWOWY ORAZ JEGO JASNA I CIEMNA WERSJA */
+    --color-base: rgb(255, 93, 115);
+    --color-base-light: rgb(255, 224, 228);
+    --color-base-dark: rgb(143, 18, 35);
+    /* NEUTRALNE ODCIENIE SZAROSCI ŻEBY NIE BYŁO ZA RÓŻOWO*/
+    --color-secondary: rgb(160, 153, 142);
+    --color-secondary-light: rgb(236, 229, 217);
+    --color-secondary-dark: rgb(85, 81, 74);
 }
 
 h1,
@@ -22,177 +20,235 @@ h4,
 h5,
 h6,
 a {
-  color: var(--color-font);
-  font-family: 'Overpass', 'Open Sans', sans-serif;
-  line-height: 1.5;
+    color: var(--color-font);
+    font-family: "Overpass", "Open Sans", sans-serif;
+    line-height: 1.5;
 }
 
 p,
 label,
 textarea,
 li {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
 }
 
 .button {
-  display: inline-block;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 2rem 0 0 0;
-  text-decoration: none;
-  background-color: var(--color-base);
-  color: #ffffff;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  transition: background 250ms ease-in-out,
-    transform 150ms ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 2rem 0 0 0;
+    text-decoration: none;
+    background-color: var(--color-base);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .button:hover,
 .button:active {
-  background-color: var(--color-base-dark);
+    background-color: var(--color-base-dark);
 }
 
+
 /* NAWIGACJA ----------------------------------------------------*/
+
 .nawig {
-  background-color: var(--color-base-dark);
+    background-color: var(--color-base-dark);
 }
 
 .logo {
-  color: white;
-  font-size: 30px;
+    color: white;
+    font-size: 30px;
 }
 
+
 /* KATEGORIE I FILTRY -------------------------------------------*/
+
 .kategorie {
-  height: 20vh;
-  width: 100%;
-  background-color: var(--color-secondary-dark);
+    height: 20vh;
+    width: 100%;
+    background-color: var(--color-secondary-dark);
 }
 
 .kategorie h1 {
-  text-align: center;
-  line-height: 20vh;
+    text-align: center;
+    line-height: 20vh;
 }
+
 
 /* PRODUKTY -----------------------------------------------------*/
+
 .produkty {
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 1rem;
-  margin: 2vh 0;
-
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    margin: 2vh 0;
 }
 
-.produkty > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-width: 6px 0 0 0;
-  border-color: var(--color-base);
-  border-style: solid;
-  border-radius: 3px;
-  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-  padding: 1vh;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+.produkty>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-width: 6px 0 0 0;
+    border-color: var(--color-base);
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    padding: 1vh;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
-.produkty > div div {
-  display: flex;
-  flex-direction: column;
+.produkty>div div {
+    display: flex;
+    flex-direction: column;
 }
 
 .produkty img {
-  max-width: 100%;
-  max-height: 120px;
-  align-self: center
+    max-width: 100%;
+    max-height: 120px;
+    align-self: center;
 }
 
 .produkty p,
 .produkty h4,
 .produkty h5,
 .produkty h6 {
-  text-align: center;
+    text-align: center;
 }
 
 .produkty h4 {
-  color: var(--color-font);
-  font-weight: 500;
-  line-height: 1.2;
-  font-size: 18px;
+    color: var(--color-font);
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 18px;
 }
 
 .produkty h6 {
-  color: var(--color-secondary);
-  font-weight: 100;
-  line-height: 1.2;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding-top: 5px;
+    color: var(--color-secondary);
+    font-weight: 100;
+    line-height: 1.2;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 5px;
 }
 
 .produkty .button {
-  padding: 0.5rem 2rem;
-  margin: 0 0 0 0;
-  text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    margin: 0 0 0 0;
+    text-transform: uppercase;
 }
 
+
+/* STRONA PRODUKTU -----------------------------------------------------*/
+
+#product {
+    width: 100%;
+    background-color: white;
+    min-height: 30vh;
+}
+
+.product-colors-container {
+    flex-basis: 15%;
+    margin-top: 0.5rem;
+}
+.product-img{
+    text-align: center;
+}
+
+.product-colors {
+    background-color: gray;
+    margin: 0 auto;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+
+
+}
+.adv-online-buy{
+    border: 6px solid  rgb(255, 93, 115);
+    background-image: linear-gradient(to right,rgb(236, 229, 217) , rgb(160, 153, 142));
+}
+.adv-online-buy li{
+    margin: 0;
+    padding: 36px 0 36px 84px;
+    list-style: none;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+}
+.colors-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 /* SLIDER -------------------------------------------------------*/
+
 .slider {
-  height: 60vh;
-  width: 100%;
-  background-color: var(--color-secondary-light);
+    height: 60vh;
+    width: 100%;
+    background-color: var(--color-secondary-light);
 }
 
 .slider h1 {
-  text-align: center;
-  line-height: 60vh;
+    text-align: center;
+    line-height: 60vh;
 }
 
+
 /* TEXT ---------------------------------------------------------*/
+
 .text {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .text div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .text div button {
-  min-width: 200px;
+    min-width: 200px;
 }
 
+
 /* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY -----------------*/
+
 .wylosowane {
-  height: 35vh;
-  width: 100%;
-  background-color: var(--color-secondary);
+    height: 35vh;
+    width: 100%;
+    background-color: var(--color-secondary);
 }
 
 .wylosowane h1 {
-  text-align: center;
-  line-height: 35vh;
+    text-align: center;
+    line-height: 35vh;
 }
 
+
 /* FOOTER --------------------------------------------------------*/
+
 footer {
-  background-color: var(--color-secondary-dark);
-  height: 20vh;
-  width: 100%;
+    background-color: var(--color-secondary-dark);
+    height: 20vh;
+    width: 100%;
 }
 
 footer h1 {
-  text-align: center;
-  line-height: 20vh;
+    text-align: center;
+    line-height: 20vh;
 }

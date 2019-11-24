@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+    <!--=========// INFO - MAIN //=============-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Makeup App</title>
+    <meta name="description" content="Makeup" />
+    <meta name="keywords" content="makeup, skin, face" />
+    <meta name="author" content="Zabrze2 - Grupa dziewczyn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--=========// BOOTSTRAP 4 //=============-->
+    <!--=========// CSS //=============-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./main.css" />
+
+    <!--=========// GOOGLE FONT //=============-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass&display=swap" rel="stylesheet" />
+
+    <!--=========// FONTAWSOME //=============-->
+    <script src="https://kit.fontawesome.com/0831f1628e.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#my-navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark nawigation sticky-top nawig">
+        <div class="container">
+            <!--=========// NAVBAR TOGGLER //=============-->
+
+            <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#my-navbar" aria-controls="my-navbar" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!--=========// NAVBAR NAV BUTTONS //=============-->
+
+            <div id="my-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#main">O NAS</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#losowe">BESTSELLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="logo" href="#kat"><i class="fab fa-envira"></i></a>
+        </div>
+    </nav>
+
+    <!--=========// KATEGORIE - LISTY FILTRUJĄCE //=============-->
+
+    <section id="kat" class="kategorie container-fluid">
+        <h1>KATEGORIE - LISTY FILTRUJĄCE</h1>
+    </section>
+
+    <!--=========// STRONA PRODUKTU //==========-->
+    <section id="product" class="container-fluid">
+        <h1 class="text-center"></h1>
+        <div class="row">
+            <div class="col-lg-4 product-img">
+                <img src="" />
+                <hr />
+                <div class="colors-container">
+
+                </div>
+            </div>
+            <div class="col-lg-5 border-left">
+                <div class="row">
+                    <h5 class="col-lg-2">Brand:</h5>
+                    <span class="col-lg-10" id="product-brand"></span>
+                </div>
+                <div class="row">
+                    <h5 class="col-lg-2">Price:</h5>
+                    <span class="col-lg-10" id="product-price"></span>
+                </div>
+                <div class="row">
+                    <h5 class="col-lg-2">Experts ratings:</h5>
+                    <span class="col-lg-10" id="product-experts-rating"></span>
+                </div>
+                <div class="row">
+                    <h5 class="col-lg-2">Category:</h5>
+                    <span class="col-lg-10" id="product-category"></span>
+                </div>
+                <div class="row">
+                    <h5 class="col-lg-2">Product type:</h5>
+                    <span class="col-lg-10" id="product-type"></span>
+                </div>
+
+            </div>
+            <div class="col-lg-3 border-left">
+                <div class="adv-online-buy">
+                    <h2>Zalety kupywania on-line:</h2>
+                    <ul>
+                        <li>-15% za zapisanie się na Newsletter</li>
+                        <li>Wysyłka gratis od 199 zł</li>
+                        <li>Dostawa w ciągu 2-3 dni roboczych</li>
+                        <li>Darmowy zwrot</li>
+                    </ul>
+                </div>
+                <a id="a-buy-now"><button class="button" id="btn-buy-now">Kup teraz</button></a>
+            </div>
+
+        </div>
+
+        <hr />
+        <h1>Opis</h1>
+        <div class="description">
+        </div>
+    </section>
+
+    <!--=========// SLIDER //=============-->
+
+    <section id="main" class="slider container-fluid">
+        <h1>SLIDER</h1>
+    </section>
+
+    <!--=========// TEXT //=============-->
+
+    <section class="text container">
+        <h3>Produkt do makijażu? U nas znajdziesz to czego szukasz!</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.
+        </p>
+        <div>
+            <button class="button">Wyślij wiadomość</button>
+            <button class="button">Produkty</button>
+            <button class="button">Kup wszystko</button>
+        </div>
+    </section>
+
+    <!--=========// FOOTER - KONTAKT //=============-->
+
+    <footer id="footer">
+        <h1>FOOTER - KONTAKT</h1>
+    </footer>
+
+    <!--=========// BOOTSTRAP 4 //=============-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="produkt.js"></script>
+</body>
+
+</html>
