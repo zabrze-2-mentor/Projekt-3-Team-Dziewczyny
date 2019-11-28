@@ -193,6 +193,95 @@ li {
     flex-wrap: wrap;
 }
 
+ul.overlap {
+    padding-bottom: 20px;
+}
+
+.table li {
+    display: inline-flex;
+    height: auto;  
+}
+
+.overlap button {
+    background-color:#fff;
+    border:none;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #111;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.table {
+    position: relative;
+    display: block;
+    height: 80vh;
+    margin: 0 auto; 
+}
+ 
+.table > div {
+    position: absolute;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0;  
+}
+
+.table div:first-child {
+    position: relative;
+}
+
+.table .select {
+    z-index: 3;
+     opacity: 1;
+}
+  
+li .on {
+    color: var(--color-base);
+    transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+/* STARS opinie --------------------------------------------------*/
+.stars {
+    background: rgb(255, 255, 255);
+    height: 30px;
+    padding: 20px 0px;
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;   
+}
+
+.stars input {
+    position: absolute;
+    left: -999999px;
+}
+
+.stars label {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: transparent;
+}
+
+.stars label::before {
+    content: '★';
+    color: #c0c0c0;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-right: -100%
+}
+
+.stars input:checked ~ label::before {
+    color: #ffa500;   
+}
+
+.productNav {
+    display: block;
+}
 
 /* SLIDER -------------------------------------------------------*/
 
