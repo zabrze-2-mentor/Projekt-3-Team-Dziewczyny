@@ -229,14 +229,21 @@ li {
 /* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY -----------------*/
 
 .wylosowane {
-    height: 35vh;
-    width: 100%;
+    /*width: 100%;*/
     background-color: var(--color-secondary);
-}
+    padding-bottom: 1rem;
 
+}
 .wylosowane h1 {
     text-align: center;
-    line-height: 35vh;
+    line-height: 15vh;
+}
+
+#losowe.produkty {
+    background-color: var(--color-secondary);
+}
+#losowe.produkty >div {
+    background-color: #fff;
 }
 
 
