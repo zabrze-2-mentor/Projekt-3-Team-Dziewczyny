@@ -60,7 +60,9 @@ li {
 .nawig {
     background-color: var(--color-base-dark);
 }
-
+.nawig .dropdown-item{
+    cursor: pointer;
+}
 .logo {
     color: white;
     font-size: 30px;
