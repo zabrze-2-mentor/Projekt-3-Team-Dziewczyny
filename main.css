@@ -318,21 +318,12 @@ li .on {
 /* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY -----------------*/
 
 .wylosowane {
-    /*width: 100%;*/
-    background-color: var(--color-secondary);
     padding-bottom: 1rem;
 
 }
 .wylosowane h1 {
     text-align: center;
     line-height: 15vh;
-}
-
-#losowe.produkty {
-    background-color: var(--color-secondary);
-}
-#losowe.produkty >div {
-    background-color: #fff;
 }
 
 
