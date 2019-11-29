@@ -44,3 +44,19 @@ var c = url.searchParams.get("id");
 fetchProduct(c);
 //todo:wycentrować zdjęcie, w kolorach mają wyskakiwać nazwy kolorów po najechaniu,
 //(username || 'guest')
+
+const arr = ["lip_liner", "lipstick", "foundation", "eyeliner", "eyeshadow", "blush", "bronzer", "mascara",
+"eyebrow", "nail_polish"];
+var text = "";
+for (let i=0; i<arr.length; i++){
+    arr[i]=arr[i].replace(/_/g, ' ');
+    
+}
+function Display(){
+    arr.forEach(function (item) {
+        text+=`<a href='#'> ${item} </a>`
+        });
+    
+    document.getElementById('kat').innerHTML=text
+}
+Display();
