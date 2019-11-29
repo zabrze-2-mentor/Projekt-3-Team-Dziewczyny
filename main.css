@@ -73,11 +73,22 @@ li {
     height: 20vh;
     width: 100%;
     background-color: var(--color-secondary-dark);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+.kategorie li {
+    list-style: none;
 }
 
 .kategorie h1 {
     text-align: center;
     line-height: 20vh;
+}
+#kat{
+    font-size: 1.5rem;
 }
 
 

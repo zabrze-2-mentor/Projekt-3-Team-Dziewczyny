@@ -45,6 +45,8 @@ fetchProduct(c);
 //todo:wycentrować zdjęcie, w kolorach mają wyskakiwać nazwy kolorów po najechaniu,
 //(username || 'guest')
 
+
+
 function showOverlap(n) {
     document.querySelector('.on').classList.remove('on');
     document.querySelector('#overlap'+ n).classList.add('on');
@@ -59,3 +61,4 @@ for (let i=1; i<=2; i++) {
 document.querySelector('.submit').addEventListener('click', function(event) {
     event.preventDefault();
 })
+

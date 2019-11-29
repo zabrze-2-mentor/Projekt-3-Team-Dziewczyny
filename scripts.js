@@ -52,6 +52,7 @@ fetch(endpoint)
             info.appendChild(button);
         });
         
+
     });
 
     fetch(endpoint)
@@ -93,3 +94,4 @@ fetch(endpoint)
         info.appendChild(button);
         }
     });
+
