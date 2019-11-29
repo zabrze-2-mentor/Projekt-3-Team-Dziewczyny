@@ -55,3 +55,7 @@ function showOverlap(n) {
 for (let i=1; i<=2; i++) {
     document.querySelector('#overlap'+i).addEventListener('click', () => showOverlap(i));
 }
+
+document.querySelector('.submit').addEventListener('click', function(event) {
+    event.preventDefault();
+})

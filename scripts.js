@@ -57,7 +57,7 @@ fetch(endpoint)
     fetch(endpoint)
     .then((data) => data.json())
     .then(data => {
-            for(let i=1; i<9; i++) {
+            for(let i=1; i<7; i++) {
             
             ranNum = Math.floor((Math.random() * data.length-1) + 1);
             let product = data[ranNum];
