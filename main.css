@@ -70,14 +70,19 @@ li {
 /* KATEGORIE I FILTRY -------------------------------------------*/
 
 .kategorie {
-    height: 20vh;
+    min-height: 20vh;
     width: 100%;
     background-color: var(--color-secondary-dark);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    grid-gap: 1rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-gap: 1rem; */
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
 }
 .kategorie li {
     list-style: none;
