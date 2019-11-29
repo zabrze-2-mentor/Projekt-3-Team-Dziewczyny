@@ -44,3 +44,14 @@ var c = url.searchParams.get("id");
 fetchProduct(c);
 //todo:wycentrować zdjęcie, w kolorach mają wyskakiwać nazwy kolorów po najechaniu,
 //(username || 'guest')
+
+function showOverlap(n) {
+    document.querySelector('.on').classList.remove('on');
+    document.querySelector('#overlap'+ n).classList.add('on');
+    document.querySelector('.select').classList.remove('select');
+    document.querySelector('.table'+n).classList.add('select');
+};
+
+for (let i=1; i<=2; i++) {
+    document.querySelector('#overlap'+i).addEventListener('click', () => showOverlap(i));
+}
