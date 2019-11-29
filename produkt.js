@@ -45,18 +45,20 @@ fetchProduct(c);
 //todo:wycentrować zdjęcie, w kolorach mają wyskakiwać nazwy kolorów po najechaniu,
 //(username || 'guest')
 
-const arr = ["lip_liner", "lipstick", "foundation", "eyeliner", "eyeshadow", "blush", "bronzer", "mascara",
-"eyebrow", "nail_polish"];
-var text = "";
-for (let i=0; i<arr.length; i++){
-    arr[i]=arr[i].replace(/_/g, ' ');
-    
+
+
+function showOverlap(n) {
+    document.querySelector('.on').classList.remove('on');
+    document.querySelector('#overlap'+ n).classList.add('on');
+    document.querySelector('.select').classList.remove('select');
+    document.querySelector('.table'+n).classList.add('select');
+};
+
+for (let i=1; i<=2; i++) {
+    document.querySelector('#overlap'+i).addEventListener('click', () => showOverlap(i));
 }
-function Display(){
-    arr.forEach(function (item) {
-        text+=`<a href='#'> ${item} </a>`
-        });
-    
-    document.getElementById('kat').innerHTML=text
-}
-Display();
+
+document.querySelector('.submit').addEventListener('click', function(event) {
+    event.preventDefault();
+})
+
