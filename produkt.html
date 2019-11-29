@@ -106,8 +106,39 @@
         </div>
 
         <hr />
-        <h1>Opis</h1>
-        <div class="description">
+        <div class="table container">
+            <ul class="overlap">
+                <li><button id="overlap1" class="on">Opis</button>
+                <li><button id="overlap2">Oceń produkt</button>
+            </ul>
+            <div class="table1 description select">
+            </div>
+            <div class='table2 opinions'>
+                <h5> Twoja opinia jest dla nas ważna.</h5>
+                <div class=stars>                    
+                    <input type='radio' id='star5' name='star' value='5'>
+                    <label for='star5'></label>
+                    <input type='radio' id='star4' name='star' value='4'>
+                    <label for='star4'></label>
+                    <input type='radio' id='star3' name='star' value='3'>
+                    <label for='star3'></label>
+                    <input type='radio' id='star2' name='star' value='2'>
+                    <label for='star2'></label>
+                    <input type='radio' id='star1' name='star' value='1'>
+                    <label for='star1'></label>   
+                </div>
+                <form>
+                    <div class="form-group">
+                            <label for="opinion"></label>
+                            <textarea class="form-control" id="opinion" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                            <label for="name">Twoje imię:</label>
+                            <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <button type="submit" class="submit button btn btn-primary mb-2">Wyślij</button>
+                </form>
+            </div>            
         </div>
     </section>
 
