@@ -88,7 +88,17 @@
                     <h5 class="col-lg-2">Product type:</h5>
                     <span class="col-lg-10" id="product-type"></span>
                 </div>
-
+                <div class="row">
+                  <h5 class="col-lg-2">Ocena klientów:</h5>
+                  <div class="col-lg-10 raiting">
+                    <span id='rate1' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate2' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate3' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate4' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate5' class='star'><i class="fas fa-star"></i></span>
+                    <a id="a-btn-rate" href="#overlap"><button class="button" id="btn-rate">Oceń</button></a>
+                  </div>
+                </div>
             </div>
             <div class="col-lg-3 border-left">
                 <div class="adv-online-buy">
@@ -102,31 +112,32 @@
                 </div>
                 <a id="a-buy-now"><button class="button" id="btn-buy-now">Kup teraz</button></a>
             </div>
+            
 
         </div>
 
         <hr />
-        <div class="table container">
+        <div id="overlap" class="table container">
             <ul class="overlap">
-                <li><button id="overlap1" class="on">Opis</button>
-                <li><button id="overlap2">Oceń produkt</button>
+                <li><button class="btn-overlap1 on">Opis</button>
+                <li><button class="btn-overlap2">Oceń produkt</button>
             </ul>
-            <div class="table1 description select">
+            <div class="overlap1 description select">
             </div>
-            <div class='table2 opinions'>
+            <div class='overlap2 opinions'>
                 <h5> Twoja opinia jest dla nas ważna.</h5>
-                <div class=stars>                    
-                    <input type='radio' id='star5' name='star' value='5'>
-                    <label for='star5'></label>
-                    <input type='radio' id='star4' name='star' value='4'>
-                    <label for='star4'></label>
-                    <input type='radio' id='star3' name='star' value='3'>
-                    <label for='star3'></label>
-                    <input type='radio' id='star2' name='star' value='2'>
-                    <label for='star2'></label>
-                    <input type='radio' id='star1' name='star' value='1'>
-                    <label for='star1'></label>   
-                </div>
+                <div class='stars'>                    
+                  <input type='radio' id='star5' name='star' value='5'>
+                  <label for='star5'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star4' name='star' value='4'>
+                  <label for='star4'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star3' name='star' value='3'>
+                  <label for='star3'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star2' name='star' value='2'>
+                  <label for='star2'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star1' name='star' value='1'>
+                  <label for='star1'><i class="fas fa-star"></i></label>   
+              </div>
                 <form>
                     <div class="form-group">
                             <label for="opinion"></label>
@@ -297,6 +308,7 @@
 
     <script src="produkt.js"></script>
     <script src="nav.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>

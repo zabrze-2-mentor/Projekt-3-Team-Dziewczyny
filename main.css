@@ -213,7 +213,7 @@ ul.overlap {
     padding-bottom: 20px;
 }
 
-.table li {
+.overlap li {
     display: inline-flex;
     height: auto;  
 }
@@ -259,6 +259,27 @@ li .on {
 }
 
 /* STARS opinie --------------------------------------------------*/
+.fa-star {
+    color: #c0c0c0;
+    font-size: 1.3rem;
+    line-height: 30px;
+    padding: 0 2px;
+}
+
+.raiting {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#btn-rate {
+    font-size: .7rem;
+    padding: .1rem;
+    margin: 1rem 1rem;   
+}
+
+.rate {
+    color: #ffa500;
+}
 .stars {
     background: rgb(255, 255, 255);
     height: 30px;
@@ -283,15 +304,7 @@ li .on {
     color: transparent;
 }
 
-.stars label::before {
-    content: '★';
-    color: #c0c0c0;
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-right: -100%
-}
-
-.stars input:checked ~ label::before {
+.stars input:checked ~ label i::before {
     color: #ffa500;   
 }
 
