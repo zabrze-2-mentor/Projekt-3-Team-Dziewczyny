@@ -1,4 +1,45 @@
 //Slider
+let currentSlide = 1;
+let play = null;
+
+function showSlide(n) {
+    currentSlide = n;
+    document.querySelector('.show').classList.remove('show');
+    document.querySelector('#slide' + n).classList.add('show');
+    document.querySelector('.selected').classList.remove('selected');
+    document.querySelector('#pin'+n).classList.add('selected');
+};
+
+
+function showNextSlide() {
+    const nextSlide = currentSlide < 3? currentSlide +1: 1;
+    showSlide(nextSlide);
+};
+
+
+function showPrevSlide() {
+    const prevSlide = currentSlide >1? currentSlide - 1: 3;
+    showSlide(prevSlide);  
+};
+
+function playSlideShow() {
+    play = setInterval(showNextSlide, 3500);
+};
+
+function stopShowSlide() {
+    clearInterval(play);
+};
+
+if (document.querySelector('.slider')) {
+    for (let i=1; i<=3; i++) {
+        document.querySelector('#pin'+i).addEventListener('click', () => showSlide(i));
+    };
+    document.querySelector('#next').addEventListener('click', showNextSlide);
+    document.querySelector('.slides').addEventListener('mouseover', stopShowSlide);
+    document.querySelector('.slides').addEventListener('mouseout', playSlideShow);
+    document.querySelector('#prev').addEventListener('click', showPrevSlide);
+    playSlideShow()
+};
 
 
 //Opinie
