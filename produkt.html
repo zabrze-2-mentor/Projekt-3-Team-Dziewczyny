@@ -98,7 +98,17 @@
                     <h5 class="col-lg-2">Product type:</h5>
                     <span class="col-lg-10" id="product-type"></span>
                 </div>
-
+                <div class="row">
+                  <h5 class="col-lg-2">Ocena klientów:</h5>
+                  <div class="col-lg-10 raiting">
+                    <span id='rate1' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate2' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate3' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate4' class='star'><i class="fas fa-star"></i></span>
+                    <span id='rate5' class='star'><i class="fas fa-star"></i></span>
+                    <a id="a-btn-rate" href="#overlap"><button class="button" id="btn-rate">Oceń</button></a>
+                  </div>
+                </div>
             </div>
             <div class="col-lg-3 border-left">
                 <div class="adv-online-buy">
@@ -112,12 +122,44 @@
                 </div>
                 <a id="a-buy-now"><button class="button" id="btn-buy-now">Kup teraz</button></a>
             </div>
+            
 
         </div>
 
         <hr />
-        <h1>Opis</h1>
-        <div class="description">
+        <div id="overlap" class="table container">
+            <ul class="overlap">
+                <li><button class="btn-overlap1 on">Opis</button>
+                <li><button class="btn-overlap2">Oceń produkt</button>
+            </ul>
+            <div class="overlap1 description select">
+            </div>
+            <div class='overlap2 opinions'>
+                <h5> Twoja opinia jest dla nas ważna.</h5>
+                <div class='stars'>                    
+                  <input type='radio' id='star5' name='star' value='5'>
+                  <label for='star5'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star4' name='star' value='4'>
+                  <label for='star4'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star3' name='star' value='3'>
+                  <label for='star3'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star2' name='star' value='2'>
+                  <label for='star2'><i class="fas fa-star"></i></label>
+                  <input type='radio' id='star1' name='star' value='1'>
+                  <label for='star1'><i class="fas fa-star"></i></label>   
+              </div>
+                <form>
+                    <div class="form-group">
+                            <label for="opinion"></label>
+                            <textarea class="form-control" id="opinion" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                            <label for="name">Twoje imię:</label>
+                            <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <button type="submit" class="submit button btn btn-primary mb-2">Wyślij</button>
+                </form>
+            </div>            
         </div>
     </section>
 
@@ -146,7 +188,126 @@
     <!--=========// FOOTER - KONTAKT //=============-->
 
     <footer id="footer">
-        <h1>FOOTER - KONTAKT</h1>
+        <footer class="page-footer font-small stylish-color-dark pt-4">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+                <div class="row">
+                <div class="col-md-4 mx-auto">
+          
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">MakeUp App</h5>
+                  <p>Informacje na temat nowości, aktualnych promocji i aktywnych kodów rabatowych znajdziesz na naszej stronie, na Facebooku oraz na Google+</p>
+          
+                </div>
+                
+                <hr class="clearfix w-100 d-md-none">
+          
+                <div class="col-md-2 mx-auto">
+          
+                  <!-- Linki -->
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Informacje</h5>
+          
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Newsletter</a>
+                    </li>
+                    <li>
+                      <a href="#!">Regulamin</a>
+                    </li>
+                    <li>
+                      <a href="#!">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#!">Polityka Prywatności</a>
+                    </li>
+                  </ul>
+          
+                </div>
+               
+                <hr class="clearfix w-100 d-md-none">
+          
+                <div class="col-md-2 mx-auto">
+          
+                  <!-- Linki druga kolumna -->
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Zamówienia</h5>
+          
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Status zamówienia</a>
+                    </li>
+                    <li>
+                      <a href="#!">Śledzenie przesyłki</a>
+                    </li>
+                    <li>
+                      <a href="#!">Reklamacje i zwroty</a>
+                    </li>
+                    <li>
+                      <a href="#!">Wymiana towaru</a>
+                    </li>
+                  </ul>
+          
+                </div>
+                
+                <hr class="clearfix w-100 d-md-none">
+          
+                <div class="col-md-2 mx-auto">
+          
+                  <!-- Linki 3 kolumna -->
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">O firmie</h5>
+          
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Kariera</a>
+                    </li>
+                    <li>
+                      <a href="#!">Złóż ofertę</a>
+                    </li>
+                    <li>
+                      <a href="#!">Kontakt</a>
+                    </li>
+                    <li>
+                      <a href="#!">Biuro prasowe</a>
+                    </li>
+                  </ul>
+          
+                </div>
+          
+              </div>
+              
+            </div>
+            
+            <hr>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-fb mx-1" href="#">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-tw mx-1" href="#">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-gplus mx-1" href="#">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-li mx-1" href="#">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                </ul>
+              
+            
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#"><p>MakeUp App</p> </a>
+              </div>
+                         
+            </footer>
     </footer>
 
     <!--=========// BOOTSTRAP 4 //=============-->
@@ -156,6 +317,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="produkt.js"></script>
+    <script src="nav.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>

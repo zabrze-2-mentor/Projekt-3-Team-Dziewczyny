@@ -72,14 +72,30 @@ li {
 /* KATEGORIE I FILTRY -------------------------------------------*/
 
 .kategorie {
-    height: 20vh;
+    min-height: 20vh;
     width: 100%;
     background-color: var(--color-secondary-dark);
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-gap: 1rem; */
+    align-items: center;
+    /* justify-items: center; */
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.kategorie li {
+    list-style: none;
 }
 
 .kategorie h1 {
     text-align: center;
     line-height: 20vh;
+}
+#kat{
+    font-size: 1.5rem;
 }
 
 
@@ -195,6 +211,108 @@ li {
     flex-wrap: wrap;
 }
 
+ul.overlap {
+    padding-bottom: 20px;
+}
+
+.overlap li {
+    display: inline-flex;
+    height: auto;  
+}
+
+.overlap button {
+    background-color:#fff;
+    border:none;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #111;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.table {
+    position: relative;
+    display: block;
+    height: 80vh;
+    margin: 0 auto; 
+}
+ 
+.table > div {
+    position: absolute;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0;  
+}
+
+.table div:first-child {
+    position: relative;
+}
+
+.table .select {
+    z-index: 3;
+     opacity: 1;
+}
+  
+li .on {
+    color: var(--color-base);
+    transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+/* STARS opinie --------------------------------------------------*/
+.fa-star {
+    color: #c0c0c0;
+    font-size: 1.3rem;
+    line-height: 30px;
+    padding: 0 2px;
+}
+
+.raiting {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#btn-rate {
+    font-size: .7rem;
+    padding: .1rem;
+    margin: 1rem 1rem;   
+}
+
+.rate {
+    color: #ffa500;
+}
+.stars {
+    background: rgb(255, 255, 255);
+    height: 30px;
+    padding: 20px 0px;
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;   
+}
+
+.stars input {
+    position: absolute;
+    left: -999999px;
+}
+
+.stars label {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: transparent;
+}
+
+.stars input:checked ~ label i::before {
+    color: #ffa500;   
+}
+
+.productNav {
+    display: block;
+}
 
 /* SLIDER -------------------------------------------------------*/
 
@@ -231,14 +349,12 @@ li {
 /* PRODUKTY WYLOSOWANE PO PRZEŁADOWANIU STRONY -----------------*/
 
 .wylosowane {
-    height: 35vh;
-    width: 100%;
-    background-color: var(--color-secondary);
-}
+    padding-bottom: 1rem;
 
+}
 .wylosowane h1 {
     text-align: center;
-    line-height: 35vh;
+    line-height: 15vh;
 }
 
 

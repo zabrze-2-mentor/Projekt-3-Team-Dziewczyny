@@ -1,21 +1,18 @@
-const endpoint =
-  "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
-//const endpoint = 'https://makeup-api.herokuapp.com/api/v1/products.json'
+const produktyKategorii = document.getElementById('produktyKategorii');
 
+var url_string = window.location.href;
+var url = new URL(url_string);
+var cat = url.searchParams.get("cat");
+var subcat = url.searchParams.get("subcat");
 
-const section = document.getElementById('produkt');
-
-let i = 0; 
-
-fetch(endpoint)
-  .then(data => data.json())
-  .then(data => {
-    data.forEach(product => {
-			i++; 
-			if(i>20){
-				return;
-			}
+const linkCat="https://makeup-api.herokuapp.com/api/v1/products.json?category="+subcat+"&product_type="+cat;
+console.log(linkCat)
+fetch(linkCat)
+    .then((data) => data.json())
+    .then(data => {
+        data.forEach(product => {
 			
+					// console.log("kategoria")
             const card = document.createElement("div")
             
             const name = document.createElement("h4");
@@ -39,7 +36,7 @@ fetch(endpoint)
                 window.location.href = "produkt.html?id=" + product.id
             })
 
-            section.appendChild(card)
+            produktyKategorii.appendChild(card)
             card.appendChild(name);
             card.appendChild(info);
             info.appendChild(img);
@@ -50,4 +47,3 @@ fetch(endpoint)
         
 
     });
-

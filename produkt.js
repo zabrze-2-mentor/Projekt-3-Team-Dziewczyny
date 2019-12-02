@@ -1,3 +1,4 @@
+
 async function fetchProduct(id = 0, currency = "USD") {
   const endpoint =
     "https://makeup-api.herokuapp.com/api/v1/products/" + id + ".json";
@@ -10,6 +11,7 @@ async function fetchProduct(id = 0, currency = "USD") {
   section.getElementsByClassName("description")[0].innerText =
     response.description;
   document.getElementById("a-buy-now").href = response.product_link;
+section.getElementsByClassName("colors-container")[0].innerHTML = "";
   response.product_colors.forEach(element => {
     let productColor = document.createElement("div");
     let productColorContainer = document.createElement("div");
@@ -72,3 +74,5 @@ document.getElementById("GBP").addEventListener("click", function (e) {
 });
 //todo:wycentrować zdjęcie, w kolorach mają wyskakiwać nazwy kolorów po najechaniu,
 //(username || 'guest')
+
+
