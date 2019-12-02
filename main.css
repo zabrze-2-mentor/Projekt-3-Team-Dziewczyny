@@ -211,6 +211,7 @@ li {
     flex-wrap: wrap;
 }
 
+
 ul.overlap {
     padding-bottom: 20px;
 }
@@ -316,16 +317,132 @@ li .on {
 
 /* SLIDER -------------------------------------------------------*/
 
-.slider {
-    height: 60vh;
+.slider.wrapper {
+    background: #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+      
+.slides {
+    position: relative;
+    display: block;    
+}
+      
+.slides:focus{
+    outline: 0;
+}
+      
+.slides figure {
+    position: absolute;
+    top: 0;
     width: 100%;
-    background-color: var(--color-secondary-light);
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1.2s;
+    transition: opacity 1.2s;  
+}
+      
+.slides figure:first-child {
+    position: relative;
+}
+      
+.slides figure img {
+    display: block;
+    max-height: 60vh;
+     min-height: 30vh;
 }
 
-.slider h1 {
-    text-align: center;
-    line-height: 60vh;
+.slides .show {
+    z-index: 3;
+    opacity: 1;
 }
+      
+.next, .prev {
+    color: #fff;
+    position: absolute;
+    background: #000;
+    background: rgba(0,0,0, .6);
+    top: 50%;
+    z-index: 4;
+    font-size: 2em;
+    margin-top: -1.2em;
+    opacity: .3;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.next:hover, 
+.prev:hover,
+nav.pins button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.next {
+    right: 0;
+    padding: 10px 5px 15px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.prev {
+    left: 0;
+    padding: 10px 10px 15px 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+      
+      
+nav.pins button {
+    background: transparent;
+    color: #fff;
+    position: relative;
+    border: none;
+    outline: none;
+}
+      
+.pins {
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 50%; 
+}
+      
+nav.pins ul {
+    margin: 0;
+    padding: 0;
+}
+      
+nav.pins ul > li {
+    display: inline-block;
+    list-style-type: none;
+}
+      
+nav.pins ul > li button {
+    width: 20px; 
+    height: 20px;
+    line-height: 25px;
+    font-size: 35px;
+    opacity: 0.7;	
+ }
+      
+nav.pins ul > li button:before {
+    content: '\2022';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+      
+nav.pins ul > li button.selected {
+    opacity: 1;
+}
+      
 
 
 /* TEXT ---------------------------------------------------------*/
