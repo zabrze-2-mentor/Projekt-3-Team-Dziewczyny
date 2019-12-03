@@ -213,12 +213,11 @@ li {
 
 
 ul.overlap {
-    padding-bottom: 20px;
+    padding: 5px 0px 20px 0px;
 }
 
 .overlap li {
     display: inline-flex;
-    height: auto;  
 }
 
 .overlap button {
@@ -233,27 +232,19 @@ ul.overlap {
 }
 
 .table {
-    position: relative;
     display: block;
-    height: 80vh;
     margin: 0 auto; 
 }
  
 .table > div {
-    position: absolute;
+    display: none;
     width: 90%;
     margin: 10px;
     padding: 10px;
-    opacity: 0;  
-}
-
-.table div:first-child {
-    position: relative;
 }
 
 .table .select {
-    z-index: 3;
-     opacity: 1;
+    display: block;
 }
   
 li .on {
